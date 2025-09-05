@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Diabetes Prediction Model</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <a href="model_info.html" style="text-decoration: none; color:black;"><h1>Diabetes Predition Model</h1></a>
+        <p>
+            <h3>Please Enter your data</h3></br>
+            <form action="" method="post">
+                <p><a href="gender_info.html" style="text-decoration: none; color:black;">gender</a> 
+                    <select name="gender">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                    </select>
+                </p>
+                <p><a href="age_info.html" style="text-decoration: none; color:black;">age</a>
+                    <input type="number" name="age" style="width: 100px;">
+                </p>
+                <p><a href="hypertension_info.html" style="text-decoration: none; color:black;">hypertension</a>
+                    <select name="hypertension">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                    </select>
+                </p>
+                <p><a href="heart_disease_info.html" style="text-decoration: none; color:black;">heart disease</a>
+                    <select name="heart_disease">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                    </select>
+                </p>
+                <p><a href="smoking_history_info.html" style="text-decoration: none; color:black;">smoking history</a>
+                    <select name="smoking_history">
+                        <option value="never">never</option>
+                        <option value="No_info">No info</option>
+                        <option value="former">former</option>
+                        <option value="current">current</option>
+                        <option value="not_current">not current</option>
+                        <option value="ever">ever</option>
+                    </select>
+                </p>
+                <p><a href="bmi_info.html" style="text-decoration: none; color:black;">bmi</a>
+                    <input type="number" name="bmi" style="width: 100px;">
+                </p>
+                <p><a href="HbA1C_level_info.html" style="text-decoration: none; color:black;">HbA1C level</a>
+                    <input type="number" name="HbA1C_level" style="width: 100px;">
+                </p>
+                <p><a href="blood_glucose_level_info.html" style="text-decoration: none; color:black;">blood glucose level</a>
+                    <input type="number" name="blood_glucose_level" style="width: 100px;">
+                </p>
+                <input type="submit" value="Predict">
+            </form>
+        </p>
+        <footer>
+            <button onclick="location.href='do_not_click.html'">Do Not Click</button>
+        </footer>
+    </body>
+</html>

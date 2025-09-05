@@ -1,0 +1,42 @@
+<p>
+    <h3>사용 데이터 : diabetes_prediction_dataset.csv</h3> 
+Kaggle(<a href="https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset">https://www.kaggle.com/datasets/iammustafatz/diabetes-prediction-dataset</a>)
+</br>나이, 성별, 체질량지수(BMI), 고혈압, 심장 질환, 당화혈색소 수치(HbA1c level), 혈당 수치(blood glucose level), 흡연 이력을 통해 당뇨병 유무를 예측할 수 있도록 구성되어 있다. 
+</br>본 프로젝트에서는 해당 데이터셋이 예측 모델 구축에 적합하다고 판단하여 사용하게 되었다.
+</p>
+
+<p>
+    <h3>About model 위의 데이터셋을 기반으로 당뇨병 예측을 위한 머신러닝 모델을 개발하였다.</h3>
+</p>
+
+<p>
+    1.전처리:
+</br>데이터를 불러온 후, 성별과 흡연 이력은 모델 학습에 적합하도록 수치형 변수로 변환하였다.
+</br>입력 변수(X)와 정답 변수(y)를 분리하였다.
+</p>
+
+<p>
+    2.데이터 분할:
+    전체 데이터를 8:2로 학습용과 테스트용으로 분할하였다.
+</p>
+
+<p>
+    3.모델 학습:
+    분류 모델로 RandomForestClassifier(랜덤 포레스트 분류기)를 사용하였다.
+    해당 알고리즘은 여러 개의 결정 트리(Decision Tree)를 훈련시킨 후, 다수결을 통해 최종 예측값을 도출하는 앙상블 학습 기법이다.
+    Random Forest는 배깅(Bagging) 및 무작위 특성 선택(Random Feature Selection)을 통해 과적합(overfitting)을 방지하고, 일반적으로 높은 예측 정확도를 제공한다.
+</p>
+
+<p>
+    4.모델 성능:
+    최종 학습된 모델은 별도의 파일로 저장하였으며, 테스트 결과 정확도(Accuracy)는 약 0.9702로 측정되었다.
+</p>
+
+<h3>
+    <p>
+        About web 웹 애플리케이션은 사용자가 직접 관련 정보를 입력하고, 입력한 값을 사전에 학습된 모델에 전달하여 당뇨병 여부를 예측하는 방식으로 설계되었다.
+    </br>사용자는 웹 상에서 직관적인 인터페이스를 통해 데이터를 입력할 수 있으며, 그에 대한 예측 결과를 실시간으로 확인할 수 있도록 구현하였다.
+    </p>
+</h3>
+
+<button onclick="location.href='main.html'">Back to Main</button>
